@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f250126c-b6dd-4a8f-abe5-51668f502001">
+	<property name="ireport.zoom" value="1.2100000000000057"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from mahasiswa]]>
+	</queryString>
+	<field name="nim" class="java.lang.String"/>
+	<field name="nama" class="java.lang.String"/>
+	<field name="alamat" class="java.lang.String"/>
+	<field name="asalsma" class="java.lang.String"/>
+	<field name="namaortu" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="113">
+			<image>
+				<reportElement x="0" y="0" width="94" height="94" uuid="abce4990-b0e5-442d-85a8-aabc6086975a"/>
+				<imageExpression><![CDATA["C:\\Users\\DELL\\OneDrive\\Yessss\\NetBeansProjects\\PBO\\src\\UAS\\Universitas-Islam-negeri-UIN-Sunan-Ampel-Logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="178" y="31" width="306" height="20" uuid="872a8097-aaab-41da-b5ab-79c9174e7dbf"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIVERSITAS ISLAM NEGERI SUNAN AMPEL SURABAYA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="57" width="426" height="37" uuid="d923f314-51ae-4210-859e-9ef3519d8836"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. Ahmad Yani No.117, Jemur Wonosari, Kec. Wonocolo, Kota Surabaya, Jawa Timur 60237, Indonesia. Telp. (031) 8410298]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="104" y="6" width="353" height="20" uuid="a2f05f97-14b8-4574-b66b-d6bf87565d03"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA MAHASISWA UIN SUNAN AMPEL SURABAYA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="22" y="1" width="100" height="20" uuid="323bd5ba-092f-4295-a602-7eac918491c9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="22" y="1" width="100" height="20" uuid="db414ddf-dcfa-4694-8811-8519520289b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NIM]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="122" y="1" width="100" height="20" uuid="ab034cd7-17f5-4efe-b69b-4dd0aa55b736"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="122" y="1" width="100" height="20" uuid="89da3e4c-89e5-4112-9abe-a54fb4beab42"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="222" y="1" width="100" height="20" uuid="201803aa-9d92-4c12-adc4-fe88ce4eeb9e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="222" y="0" width="100" height="20" uuid="93730dc5-ee04-42b9-bd33-843a958a4c13"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="322" y="1" width="100" height="20" uuid="d799ef7c-150d-48e7-bfe4-0e4e475e7ccd"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="322" y="0" width="100" height="20" uuid="9373bf50-e112-4f44-a992-91c95273fce5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ASAL SMA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="422" y="1" width="100" height="20" uuid="2c8d3b28-7b69-486b-96cd-9810840205d2"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="422" y="0" width="100" height="20" uuid="bbd8e40d-f6ab-4cb4-8b37-63e025475d79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[NAMA ORANG TUA]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="22" y="0" width="100" height="20" uuid="c0ed6cdc-d817-4c80-aa95-110c1cd62f46"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="122" y="0" width="100" height="20" uuid="e434d45e-3ca6-4d4f-9586-cd54d355e91d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="422" y="0" width="100" height="20" uuid="02219324-05e8-4133-b2e2-697c2765527b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="222" y="0" width="100" height="20" uuid="a4ee3f82-3a91-44ca-b448-0ec2eb777acc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="322" y="0" width="100" height="20" uuid="ac321514-5480-4a2d-be49-4cca048bb368"/>
+			</rectangle>
+			<textField>
+				<reportElement x="428" y="0" width="89" height="20" uuid="3c9eb406-5a24-4e21-aa73-0ff7aec7c308"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{namaortu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="0" width="89" height="20" uuid="01b2d2bb-34e7-45ff-8105-5a00c59ab755"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="126" y="0" width="90" height="20" uuid="e5cbab73-0fa2-48d6-a4d3-773f2e267adc"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="0" width="82" height="20" uuid="c0f80fc7-8db3-4ee6-90ae-3c88e878e1a5"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nim}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="0" width="80" height="20" uuid="78077a32-94c0-45c2-bfd6-71cce576a688"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{asalsma}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="141" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="408" y="0" width="100" height="20" uuid="04de00a9-6401-4b7f-9185-1cb637fbb8c5"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="384" y="20" width="100" height="20" uuid="122cb098-ca12-4684-9f5a-ec6415cfeb7e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Rektor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="328" y="104" width="227" height="21" uuid="efc4b7ff-54d2-4343-abc7-f38541f8be97"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Prof. Akhmad Muzakki, M.Ag., Grad.Dip., SEA., M.Phil., Ph.D.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="48" height="20" uuid="39b3d558-cdaa-4027-b164-f7b4d1125b49"/>
+				<text><![CDATA[Surabaya,]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

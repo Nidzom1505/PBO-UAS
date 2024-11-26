@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7d07ea74-7b5d-450a-a532-b4744b069dc5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM matakuliah]]>
+	</queryString>
+	<field name="kodemk" class="java.lang.String"/>
+	<field name="sks" class="java.lang.Integer"/>
+	<field name="namamk" class="java.lang.String"/>
+	<field name="semesterajar" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="5" y="-1" width="121" height="79" uuid="44b996b4-fb8a-4954-a8fd-87f93c1187c3"/>
+				<imageExpression><![CDATA["C:\\Users\\DELL\\OneDrive\\Yessss\\NetBeansProjects\\PBO\\src\\Pertemuan11\\Universitas-Islam-negeri-UIN-Sunan-Ampel-Logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="201" y="14" width="306" height="20" uuid="3d444dfb-e163-4948-97b3-eb0e4220e38a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIVERSITAS ISLAM NEGERI SUNAN AMPEL SURABAYA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="34" width="426" height="37" uuid="0a169acc-beb9-4098-9d59-0bef08f69ca4"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. Ahmad Yani No.117, Jemur Wonosari, Kec. Wonocolo, Kota Surabaya, Jawa Timur 60237, Indonesia. Telp. (031) 8410298]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="78" width="555" height="1" uuid="9f6fb126-7a08-45d5-bea1-02bbc882322a"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="157" y="11" width="245" height="27" uuid="debcd498-9b97-4add-a0d8-3d26f9148d42"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Daftar MataKuliah Mahasiswa]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20">
+			<rectangle>
+				<reportElement x="0" y="0" width="134" height="20" uuid="4defed6b-50ea-4607-8951-cc6e907669fa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="134" y="0" width="206" height="20" uuid="d8143789-ff38-497e-b84a-d56c7564616d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="340" y="0" width="117" height="20" uuid="63ecfcea-db41-4a0e-89dc-88df9e434ad5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="457" y="0" width="98" height="20" uuid="a5402a16-91da-4244-aa7e-be28ddc9477a"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="8" y="0" width="118" height="20" uuid="3314938d-3842-4457-9364-c1ae8c1fb1a3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode MataKuliah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="0" width="206" height="20" uuid="3fc164f7-7ae0-40d8-a33c-972cee16f9a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama MataKuliah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="340" y="0" width="117" height="20" uuid="51910255-eaec-4086-b14e-c93af81a7814"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Semester]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="457" y="0" width="98" height="20" uuid="fcd1e449-19a6-4435-8ff6-d59b0e18bba4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SKS]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="134" y="0" width="206" height="20" uuid="c5190574-fc67-443d-9773-977ea7b9782e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="457" y="0" width="98" height="20" uuid="e86ef860-ff01-497f-ada9-7e0d2840c1b0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="134" height="20" uuid="55b53d7a-9f3d-47c8-b17e-68ba88b3ca46"/>
+			</rectangle>
+			<textField>
+				<reportElement x="457" y="0" width="98" height="20" uuid="e4717b7f-40cc-4083-9f6d-6e4c91498b86"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sks}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="340" y="0" width="117" height="20" uuid="1962ee4c-3fa8-4425-b355-607c1dc0e932"/>
+			</rectangle>
+			<textField>
+				<reportElement x="340" y="0" width="117" height="20" uuid="160866f4-392c-415d-9c3f-43295ffa5aef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{semesterajar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="0" width="200" height="20" uuid="5b28b5d2-dbbb-401f-9e17-d549fa0da4f3"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{namamk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="0" width="118" height="20" uuid="3325b681-335c-4980-a93e-d3f8e911050e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kodemk}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="138">
+			<staticText>
+				<reportElement x="402" y="24" width="128" height="20" uuid="7d45ed21-c554-48d0-a2d3-a30981b88c40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ketua Progam Studi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="121" width="105" height="17" uuid="edf4ad56-339f-4e51-b3ac-ebb04f519ca7"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dwi Rolliawati, M.T]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="381" y="4" width="62" height="20" uuid="c26aa2c3-7b9b-462a-aead-066fe1ea223f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Surabaya,  ]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="441" y="4" width="114" height="20" uuid="4ff14450-7504-4dbb-aaed-7fb4dede1d67"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="118"/>
+	</pageFooter>
+</jasperReport>
