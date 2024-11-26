@@ -5,6 +5,15 @@ buat tabel dengan entitas seperti ini
 
 source code insert, update, delete seperti repository sebelumnya memakai persistence
 
+library yang digunakan:
+1. PostgresSQL
+2. Library Persistence
+3. Library JasperReport
+4. serta Java yang digunakan versi 21
+
+![image](https://github.com/user-attachments/assets/5ce9c13e-96cb-4613-9069-c8c9adc4f2b0)
+
+
 Frame Login terdapat show and hide
 
 ![Screenshot 2024-11-26 152207](https://github.com/user-attachments/assets/3893987a-1002-4c3a-9604-ad3539fd3e03)
