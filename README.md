@@ -1,3 +1,10 @@
+buat tabel dengan entitas seperti ini
+
+![image](https://github.com/user-attachments/assets/6e233ccf-8c8d-4855-bc01-a153967a5d6e)
+
+
+source code insert, update, delete seperti repository sebelumnya memakai persistence
+
 Frame Login terdapat show and hide
 
 ![Screenshot 2024-11-26 152207](https://github.com/user-attachments/assets/3893987a-1002-4c3a-9604-ad3539fd3e03)
